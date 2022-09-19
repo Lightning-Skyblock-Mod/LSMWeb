@@ -1,5 +1,5 @@
 <script>
-import Home from './views/Home'
+import Home from './views/Home.vue'
 export default {
   name: 'App',
   components: {
