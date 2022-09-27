@@ -5,7 +5,7 @@ const base = "/";
 
 const routes = [
     {
-        path: base + "home",
+        path: base,
         name: "Home",
         component: Home,
         includeInHeader: true
