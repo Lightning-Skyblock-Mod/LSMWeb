@@ -5,16 +5,18 @@ const base = "/";
 
 const routes = [
     {
-        path: base,
+        path: "/",
         name: "Home",
         component: Home,
-        includeInHeader: true
-    }
+    },
+
+
+
 ];
 
 const router = createRouter({
     history: createWebHistory(),
-    routes
-})
+    routes,
+});
 
 export default router;
