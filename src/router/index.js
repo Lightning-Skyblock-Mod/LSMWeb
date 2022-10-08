@@ -1,14 +1,18 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 
-const base = "/";
+const base = "/lsm";
 
 const routes = [
     {
-        path: "/",
+        path: base + "/home",
         name: "Home",
         component: Home,
     },
+
+    { path: base, redirect: base + "/home" },
+    { path: "/", redirect: base + "/home" }
+
 
 
 
