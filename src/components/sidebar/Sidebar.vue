@@ -2,9 +2,11 @@
 
 <script>
 import { collapsed, toggleSidebar, sidebarWidth } from "@/components/sidebar/state";
+import SidebarLink from "@/components/sidebar/SidebarLink.vue";
 
 export default {
   name: "Sidebar",
+  components: { SidebarLink },
   setup() {
     return { collapsed, toggleSidebar, sidebarWidth }
   }
@@ -18,8 +20,11 @@ export default {
         <div>V</div>
         <div>S</div>
       </span>
-      <span v-else>Vue Sidebar</span>
+      <span v-else>LSM</span>
     </h1>
+
+    <SidebarLink icon="fas fa-home" to="/lsm/home">Home</SidebarLink>
+
     <span
       class="collapse-icon"
       :class="{'rotate-180': collapsed}"
