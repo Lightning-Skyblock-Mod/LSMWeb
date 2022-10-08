@@ -24,12 +24,14 @@ export default {
     </h1>
 
     <SidebarLink icon="fas fa-home" to="/lsm/home">Home</SidebarLink>
+    <SidebarLink icon="fas fa-home" to="/lsm/discord">Discord</SidebarLink>
 
     <span
       class="collapse-icon"
-      :class="{'rotate-180': collapsed}"
-      @click="toggleSidebar">
-      <i class="fas fa-angle-double-left"></i>
+      :class="{ 'rotate-180': collapsed }"
+      @click="toggleSidebar"
+    >
+      <i class="fas fa-angle-double-left" />
     </span>
 
   </div>
