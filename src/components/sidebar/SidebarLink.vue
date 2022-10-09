@@ -1,12 +1,17 @@
 <template>
-  <router-link :to="to" class="link" :class="{active: isActive}">
-    <i class="icon" :class="icon" />
-    <transition name="fade">
+  <div class="font">
+    <router-link :to="to" class="link" :class="{active: isActive}">
+      <i class="icon" :class="icon" />
+
+      <transition name="fade">
       <span v-if="!collapsed">
         <slot />
       </span>
-    </transition>
-  </router-link>
+      </transition>
+
+    </router-link>
+  </div>
+
 </template>
 
 <script>
@@ -69,6 +74,15 @@ export default {
   flex-shrink: 0;
   width: 25px;
   margin-right: 10px;
+}
+
+@font-face {
+  font-family: Manrope;
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+}
+
+.font {
+  font-family: Manrope, sans-serif;
 }
 
 </style>

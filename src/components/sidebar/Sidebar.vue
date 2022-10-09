@@ -4,6 +4,7 @@
 import { collapsed, toggleSidebar, sidebarWidth } from "@/components/sidebar/state";
 import SidebarLink from "@/components/sidebar/SidebarLink.vue";
 
+
 export default {
   name: "Sidebar",
   components: { SidebarLink },
@@ -17,21 +18,26 @@ export default {
   <div class="sidebar" :style="{width: sidebarWidth}">
     <h1>
       <span v-if="collapsed">
-        <div>V</div>
-        <div>S</div>
+        <div> </div>
       </span>
       <span v-else>LSM</span>
     </h1>
+    <span v-if="collapsed">
+      <SidebarLink icon="fas fa-home" to="/lsm/home"></SidebarLink>
+      <SidebarLink icon="fas fa-home" to="/lsm/discord"></SidebarLink>
+    </span>
+    <span v-else>
+      <SidebarLink icon="fas fa-home" to="/lsm/home"> Home</SidebarLink>
+      <SidebarLink icon="fa-brands fa-discord" to="/lsm/discord"> Discord</SidebarLink>
+    </span>
 
-    <SidebarLink icon="fas fa-home" to="/lsm/home">Home</SidebarLink>
-    <SidebarLink icon="fas fa-home" to="/lsm/discord">Discord</SidebarLink>
 
     <span
       class="collapse-icon"
       :class="{ 'rotate-180': collapsed }"
       @click="toggleSidebar"
     >
-      <i class="fas fa-angle-double-left" />
+      <i class="fa-solid fa-bars"></i>
     </span>
 
   </div>
@@ -40,10 +46,18 @@ export default {
 </template>
 
 <style>
+
+
+@font-face {
+  font-family: Manrope;
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+}
+
 :root{
   --sidebar-bg-color: #301934;
   --sidebar-item-hover: #A45EE9;
   --sidebar-item-active: #9866C7;
+  --font-family: Manrope, sans-serif;
 }
 </style>
 
@@ -64,6 +78,7 @@ export default {
 
     display: flex;
     flex-direction: column;
+    font-family: var(--font-family);
   }
 
   .collapse-icon {
@@ -76,8 +91,13 @@ export default {
   }
 
   .rotate-180 {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
     transition: 0.2s linear;
+  }
+
+
+  .font {
+    font-family: Manrope, sans-serif;
   }
 
 </style>
