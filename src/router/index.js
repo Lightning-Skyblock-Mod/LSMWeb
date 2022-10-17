@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Discord from "@/views/Discord.vue";
-import 404 from "../views/404.vue";
+import NotFound from "../views/404.vue";
 
 const base = "/";
 
@@ -12,7 +12,7 @@ const routes = [
         component: Home,
     },
     { path: base + "discord", component: Discord },
-    { path: "*", component: 404, name: "404" }
+    { path: "*", component: NotFound, name: "404" }
 
 
 
