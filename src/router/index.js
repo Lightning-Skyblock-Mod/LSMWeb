@@ -12,7 +12,7 @@ const routes = [
         component: Home,
     },
     { path: base + "discord", component: Discord },
-    { path: "*", component: 404, name: 404 }
+    { path: "*", component: 404, name: "404" }
 
 
 
