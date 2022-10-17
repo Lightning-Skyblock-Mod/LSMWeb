@@ -27,8 +27,8 @@ export default {
       <SidebarLink icon="fas fa-home" to="/lsm/discord"></SidebarLink>
     </span>
     <span v-else>
-      <SidebarLink icon="fas fa-home" to="/lsm/home"> Home</SidebarLink>
-      <SidebarLink icon="fa-brands fa-discord" to="/lsm/discord"> Discord</SidebarLink>
+      <SidebarLink icon="fas fa-home" to="/"> Home</SidebarLink>
+      <SidebarLink icon="fa-brands fa-discord" to="/discord"> Discord</SidebarLink>
     </span>
 
 
