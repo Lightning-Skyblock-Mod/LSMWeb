@@ -12,7 +12,7 @@ const routes = [
         component: Home,
     },
     { path: base + "discord", component: Discord },
-    { path: "*", component: NotFound, name: "404" }
+    { path: "/:catchAll(.*)", component: NotFound, name: "404" }
 
 
 
