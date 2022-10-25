@@ -8,11 +8,11 @@ const base = "/";
 const routes = [
     {
         path: base,
-        name: "Home - LSM",
+        name: "Home",
         component: Home,
     },
-    { path: base + "discord", component: Discord, name: "Discord - LSM" },
-    { path: "/:catchAll(.*)", component: NotFound, name: "404 - LSM" }
+    { path: base + "discord", component: Discord, name: "Discord" },
+    { path: "/:catchAll(.*)", component: NotFound, name: "404" }
 
 
 
