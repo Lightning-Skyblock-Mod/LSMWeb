@@ -18,13 +18,13 @@ export default {
   <div class="sidebar" :style="{width: sidebarWidth}">
     <h1>
       <span v-if="collapsed">
-        <div> </div>
+        <div>LSM </div>
       </span>
       <span v-else>LSM</span>
     </h1>
     <span v-if="collapsed">
-      <SidebarLink icon="fas fa-home" to="/lsm/home"></SidebarLink>
-      <SidebarLink icon="fas fa-home" to="/lsm/discord"></SidebarLink>
+      <SidebarLink icon="fas fa-home" to="/"> Home</SidebarLink>
+      <SidebarLink icon="fa-brands fa-discord" to="/discord"> Discord</SidebarLink>
     </span>
     <span v-else>
       <SidebarLink icon="fas fa-home" to="/"> Home</SidebarLink>

@@ -1,10 +1,9 @@
 <template>
-  <div class="container">
+
     <div class="font">
       <h1>Test</h1>
     </div>
-      <h1>This is the about page</h1>
-  </div>
+      <h1>This is the about page jdsagfjkdsgfsgdfjkgsjkdgfjksgkfsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssajsgfjgfdskdjgsfjfgd</h1>
 </template>
 
 <script>
