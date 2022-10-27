@@ -31,7 +31,7 @@ export default {
     <span v-else>
       <SidebarLink icon="fas fa-home" to="/"> Home</SidebarLink>
       <SidebarLink icon="fa-brands fa-discord" to="/discord"> Discord</SidebarLink>
-      <SidebarLink incon="fa-brands fa-github" to="https://github.com/Lightning-Skyblock-Mod/LSMWeb"> Github</SidebarLink>
+      <SidebarLink icon="fa-brands fa-github" to="/github"> Github</SidebarLink>
     </span>
 
 
