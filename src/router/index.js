@@ -12,7 +12,7 @@ const routes = [
         component: Home,
     },
     { path: base + "discord", component: Discord, name: "Discord" },
-    { path: "/:catchAll(.*)", component: NotFound, name: "404" }
+    { path: "/:catchAll(.*)", component: NotFound, name: "404" },
     { path: "/github", name: "Github", beforeEnter(to, from, next) { 
         window.location.href = "https://github.com/Lightning-Skyblock-Mod/LSMWeb"; 
     }
