@@ -25,10 +25,13 @@ export default {
     <span v-if="collapsed">
       <SidebarLink icon="fas fa-home" to="/"> Home</SidebarLink>
       <SidebarLink icon="fa-brands fa-discord" to="/discord"> Discord</SidebarLink>
+      <SidebarLink incon="fa-brands fa-github" to="https://github.com/Lightning-Skyblock-Mod/LSMWeb"> Github</SidebarLink>
+
     </span>
     <span v-else>
       <SidebarLink icon="fas fa-home" to="/"> Home</SidebarLink>
       <SidebarLink icon="fa-brands fa-discord" to="/discord"> Discord</SidebarLink>
+      <SidebarLink incon="fa-brands fa-github" to="https://github.com/Lightning-Skyblock-Mod/LSMWeb"> Github</SidebarLink>
     </span>
 
 
