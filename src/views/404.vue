@@ -18,7 +18,7 @@
 <style scoped>
 
   center {
-    position: absolute;
+    text-align: center;
     margin: 15vw;
   }
 
