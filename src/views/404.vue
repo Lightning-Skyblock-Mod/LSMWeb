@@ -18,6 +18,7 @@
 <style scoped>
 
   center {
+    position: absolute;
     margin: 15vw;
   }
 
