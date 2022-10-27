@@ -2,7 +2,10 @@
   <div class="gradient__bg">
     <Loading v-if="isLoading" />
     <Sidebar />
-    <router-view />
+    <div style="{'margin-left': sidebarWidth}">
+      <router-view/>
+    </div>
+    
 
 
 
