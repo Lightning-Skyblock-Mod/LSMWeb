@@ -91,11 +91,11 @@ export default {
   }
   
   .lsm-text {
-    top: 25
+    top: 35
   }
   
   .lsm-links {
-    top: 28
+    top: 38
   }
 
   .rotate-180 {
