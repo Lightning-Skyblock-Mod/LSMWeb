@@ -18,17 +18,14 @@ export default {
   <div class="sidebar" :style="{width: sidebarWidth}">
     <h1>
       <span v-if="collapsed">
-        <div>LSM </div>
+        <div></div>
       </span>
-      <span v-else>LSM</span>
+      <span v-else class="lsm-text">LSM</span>
     </h1>
     <span v-if="collapsed">
-      <SidebarLink icon="fas fa-home" to="/"> Home</SidebarLink>
-      <SidebarLink icon="fa-brands fa-discord" to="/discord"> Discord</SidebarLink>
-      <SidebarLink icon="fa-brands fa-github" to="/github"> Github</SidebarLink>
 
     </span>
-    <span v-else>
+    <span v-else class="lsm-links">
       <SidebarLink icon="fas fa-home" to="/"> Home</SidebarLink>
       <SidebarLink icon="fa-brands fa-discord" to="/discord"> Discord</SidebarLink>
       <SidebarLink icon="fa-brands fa-github" to="/github"> Github</SidebarLink>
@@ -86,11 +83,19 @@ export default {
 
   .collapse-icon {
     position: absolute;
-    bottom: 0;
+    top: 0;
     padding: 0.75em;
 
     color: rgba(255, 255, 255, 0.7);
     transition: 0.2s linear;
+  }
+  
+  .lsm-text {
+    top: 25
+  }
+  
+  .lsm-links {
+    top: 28
   }
 
   .rotate-180 {
