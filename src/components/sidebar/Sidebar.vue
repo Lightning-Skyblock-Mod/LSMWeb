@@ -16,6 +16,14 @@ export default {
 
 <template>
   <div class="sidebar" :style="{width: sidebarWidth}">
+    <span
+        class="collapse-icon"
+        :class="{ 'rotate-180': collapsed }"
+        @click="toggleSidebar"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </span>
+
     <h1>
       <span v-if="collapsed">
         <div></div>
@@ -23,6 +31,7 @@ export default {
       <span v-else class="lsm-text">LSM</span>
     </h1>
     <span v-if="collapsed">
+
 
     </span>
     <span v-else class="lsm-links">
@@ -74,6 +83,7 @@ export default {
     bottom: 0;
     padding: 0.5em;
 
+
     transition: 0.3s ease;
 
     display: flex;
@@ -81,21 +91,23 @@ export default {
     font-family: var(--font-family);
   }
 
+  .lsm-text {
+    top: 25px;
+    left: 7px;
+  }
+  .lsm-links {
+    top: 27px;
+    left: 7px;
+  }
+
   .collapse-icon {
     position: absolute;
-    top: 0;
+
     padding: 0.75em;
+    top: 0;
 
     color: rgba(255, 255, 255, 0.7);
     transition: 0.2s linear;
-  }
-  
-  .lsm-text {
-    top: 25;
-  }
-  
-  .lsm-links {
-    top: 28;
   }
 
   .rotate-180 {
